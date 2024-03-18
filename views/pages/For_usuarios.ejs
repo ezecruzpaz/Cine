@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <%- include('../includes/head') %>
+        <style>
+            #nuevoUsuarioForm {
+                display: none;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: white;
+                padding: 20px;
+                z-index: 1000;
+            }
+
+            #cerrarPopupBtn {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                cursor: pointer;
+            }
+
+            /* Tu estilo aquí */
+        </style>
+</head>
+
+<header class="header">
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+        <li>
+            <a class="menu-item" href="/lista-usuarios">Salas</a>
+        </li>
+        <li>
+            <a href="/lista-Peliculas">Peliculas</a>
+        </li>
+        <li>
+            <a class="menu-item" href="/">Cerrar sesion</a>
+        </li>
+    </ul>
+</header>
+
+<body>
+    <div class="container" style="margin-top: 80px !important">
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-12 mt-2 text-center">
+                <h2 class="title">Salas</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-8 py-3 custom_table mx-auto">
+        <form id="filterForm" class="mb-3">
+            <!-- Filtros -->
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <label for="sala" class="form-label">Sala</label>
+                    <select id="sala" name="sala" class="form-select">
+                        <option value="">Seleccionar Sala</option>
+                        <option value="Sala Uno">Sala 1</option>
+                        <option value="Sala Dos">Sala 2</option>
+                        <option value="Sala Tres">Sala 3</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="fecha" class="form-label">Fecha</label>
+                    <input type="date" id="fecha" name="fecha" class="form-control">
+                </div>
+
+                <div class="col-md-4">
+                    <label for="pelicula" class="form-label">Pelicula</label>
+                    <select id="pelicula" name="pelicula" class="form-select">
+                        <option value="">Seleccionar Pelicula</option>
+                        <option value="Sala Uno">Sala 1</option>
+
+                        <!-- Aquí se agregarían las opciones de películas -->
+                    </select>
+                </div>
+            </div>
+        </form>
+        <!-- Contenido de tu página -->
+        <div class="container">
+            <!-- Tabla de Salas -->
+            <table id="tablaSalas" class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nombre</th>
+                        <th>Horario</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se cargarían dinámicamente las salas -->
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Nombre Sala</td>
+                            <td>Horario Sala</td>
+                            <td>
+                                <button type="button" class="btn btn-primary">Editar</button>
+                            </td>
+                        </tr>
+                        <!-- Agrega más filas de acuerdo a tus datos -->
+                    </tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
+<style>
+    /* Estilos generales del formulario */
+    form {
+        padding: 15px;
+    }
+  </style>

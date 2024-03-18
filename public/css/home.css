@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  background-color: #f4f4f4; /* Fondo gris claro */
+  color: #333; /* Color de texto gris oscuro */
+  font-family: "Ubuntu", sans-serif;
+}
+
+.title {
+  color: #f9ca24; /* Rojo oscuro */
+  font-size: 30px;
+  font-weight: 900;
+}
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  top: 0;
+}
+
+.custom_table {
+  background-color: #fff; /* Cambiado a fondo gris claro */
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.btn-primary,
+.btn-outline-secondary {
+  background-color: #f9ca24; /* Rojo oscuro */
+  color: #fff; /* Texto blanco */
+  border: none;
+}
+
+.btn-primary:hover,
+.btn-outline-secondary:hover {
+  background-color: #f9ca24; /* Rojo más oscuro al pasar el mouse */
+}
+
+.btn-success,
+.btn-danger {
+  background-color: #f9ca24; /* Amarillo */
+  color: #333; /* Texto gris oscuro */
+  border: none;
+}
+
+.btn-success:hover,
+.btn-danger:hover {
+  background-color: #e1b12c; /* Amarillo más claro al pasar el mouse */
+}
+
+#nuevoUsuarioForm {
+  background-color: #333; /* Fondo gris oscuro */
+  color: #000000; /* Texto blanco */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#cerrarPopupBtn {
+  color: #f9ca24; /* Rojo oscuro */
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#mensajeNoEncontrado {
+  background-color: #333; /* Fondo gris oscuro */
+  border: 1px solid #f9ca24; /* Borde rojo oscuro */
+  color: #f9ca24; /* Texto rojo oscuro */
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.swal2-title {
+  color: #f9ca24; /* Texto rojo oscuro */
+}
+
+.swal2-confirm,
+.swal2-cancel {
+  background-color: #f9ca24; /* Rojo oscuro */
+  color: #fff; /* Texto blanco */
+  border: none;
+}
+
+.swal2-confirm:hover,
+.swal2-cancel:hover {
+  background-color: #f9ca24; /* Rojo más oscuro al pasar el mouse */
+}
+
+.table th,
+.table td {
+  color: #333; /* Texto gris oscuro */
+}
+
+.btn-success,
+.btn-danger {
+  background-color: #f9ca24; /* Amarillo */
+  color: #333; /* Texto gris oscuro */
+  border: none;
+  margin: 0;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-success:hover,
+.btn-danger:hover {
+  background-color: #e1b12c; /* Amarillo más claro al pasar el mouse */
+}
+
+.table td span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.swal2-title,
+.swal2-confirm,
+.swal2-cancel {
+  color: #f9ca24; /* Texto rojo oscuro */
+}
+
+.swal2-confirm:hover,
+.swal2-cancel:hover {
+  background-color: #f9ca24; /* Rojo más oscuro al pasar el mouse */
+}
+
+#tablaUsuarios .btn-success,
+#tablaUsuarios .btn-danger {
+  width: 80px;
+  margin: 0;
+  
+}
